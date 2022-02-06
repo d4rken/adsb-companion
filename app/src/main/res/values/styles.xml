@@ -1,0 +1,73 @@
+<resources>
+
+    <style name="Toolbar" parent="@style/Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ProgressStyleSpinner" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">?colorSecondary</item>
+    </style>
+
+    <style name="ProgressStyleSpinnerSmall" parent="ProgressStyleSpinner">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">24dp</item>
+    </style>
+
+    <style name="DefaultListItemContainer">
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:focusable">true</item>-->
+        <!--<item name="android:background">@drawable/list_selector_background_default</item>-->
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <style name="OneLineListItemContainer" parent="DefaultListItemContainer">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="OneLineListItemContainerDense" parent="OneLineListItemContainer">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="TwoLineListItemContainer" parent="DefaultListItemContainer">
+        <item name="android:layout_height">72dp</item>
+        <item name="android:minHeight">72dp</item>
+    </style>
+
+    <style name="TwoLineListItemContainerDense" parent="TwoLineListItemContainer">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:minHeight">64dp</item>
+    </style>
+
+    <style name="ThreeLineListItemContainer" parent="DefaultListItemContainer">
+        <item name="android:layout_height">88dp</item>
+        <item name="android:minHeight">88dp</item>
+    </style>
+
+
+    <style name="ListItemTextTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ListItemTextPrimary" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="ListItemIconPrimary">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:contentDescription">Preview image</item>
+    </style>
+
+    <style name="ListItemIconSecondary">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">24dp</item>
+    </style>
+</resources>

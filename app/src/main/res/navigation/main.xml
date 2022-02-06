@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="eu.darken.adsbc.main.ui.main.MainFragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_exampleFragment_to_settingsContainerFragment"
+            app:destination="@id/settingsContainerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_feederActionDialog"
+            app:destination="@id/feederActionDialog" />
+        <action
+            android:id="@+id/action_mainFragment_to_aircraftActionDialog"
+            app:destination="@id/aircraftActionDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsContainerFragment"
+        android:name="eu.darken.adsbc.main.ui.settings.SettingsFragment"
+        android:label="SettingsContainerFragment"
+        tools:layout="@layout/settings_fragment" />
+    <dialog
+        android:id="@+id/feederActionDialog"
+        android:name="eu.darken.adsbc.feeder.ui.list.actions.FeederActionDialog"
+        android:label="FeederActionDialog"
+        tools:layout="@layout/feeder_list_action_dialog">
+
+        <argument
+            android:name="feederId"
+            app:argType="eu.darken.adsbc.feeder.core.FeederId" />
+    </dialog>
+    <dialog
+        android:id="@+id/aircraftActionDialog"
+        android:name="eu.darken.adsbc.aircraft.ui.actions.AircraftActionDialog"
+        android:label="AircraftActionDialog"
+        tools:layout="@layout/aircraft_list_action_dialog">
+        <argument
+            android:name="aircraftId"
+            app:argType="eu.darken.adsbc.aircraft.core.AircraftId" />
+    </dialog>
+
+</navigation>

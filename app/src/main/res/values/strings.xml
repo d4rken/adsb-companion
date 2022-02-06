@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">ADS-B Companion</string>
+    <string name="enterprise_mode_label">Enterprise mode</string>
+    <string name="label_settings">Settings</string>
+    <string name="label_help">Help</string>
+    <string name="label_example_fragment">Example Fragment</string>
+    <string name="label_another_fragment">Another Fragment</string>
+    <string name="action_show_another_fragment">Show another fragment</string>
+    <string name="msg_what_up_this_is_another_fragment">What up! This is another fragment!</string>
+    <string name="general_error_label">Error</string>
+
+    <string name="general_share_action">Share</string>
+    <string name="general_done_action">Done</string>
+    <string name="general_copy_action">Copy</string>
+
+    <string name="debug_debuglog_size_label">Size</string>
+    <string name="debug_debuglog_size_compressed_label">Compressed size</string>
+    <string name="debug_notification_channel_label">Debug notifications</string>
+    <string name="debug_debuglog_file_label">Recorded log file</string>
+    <string name="debug_debuglog_record_action">Record debug log</string>
+
+    <string name="settings_privacy_policy_label">Privacy policy</string>
+    <string name="settings_licenses_label">Licenses</string>
+    <string name="general_thank_you_label">Thank you</string>
+    <string name="settings_category_other_label">Other</string>
+
+    <string name="general_settings_label">General</string>
+    <string name="general_settings_desc">General tweaks that affect the whole app.</string>
+    <string name="changelog_label">Changelog</string>
+    <string name="settings_acknowledgements_label">Acknowledgements</string>
+    <string name="documentation_label">Documentation</string>
+    <string name="email_developer_label">Email developer</string>
+
+    <string name="support_installid_label">Install ID</string>
+    <string name="support_installid_desc">Automatic error reports are anonymous. Share your install ID if the developer needs to find your error reports.</string>
+    <string name="feeder_list_page_label">Feeders</string>
+    <string name="general_add_action">Add</string>
+    <string name="add_feeder_title">Add feeder</string>
+    <string name="add_feeder_description">Input your feeder ID (it\'s the short feeder ID supplied by the ADSBx stats package).</string>
+    <string name="general_cancel_action">Cancel</string>
+    <string name="general_help_info">Info</string>
+    <string name="general_upgrade_action">Upgrade</string>
+    <string name="upgrade_enterprise_description">Upgrade to enterprise mode.</string>
+    <string name="last_seen_not_seen_label">Not seen yet</string>
+    <string name="feeder_delete_action">Delete</string>
+    <string name="general_confirmation_confirmation_label">Really sure?</string>
+    <string name="general_confirmation_label">Sure?</string>
+    <string name="feeder_refresh_action">Refresh</string>
+    <string name="feeder_rename_action">Rename</string>
+    <string name="aircraft_details_action">Aircraft details</string>
+    <string name="aircraft_list_page_label">Aircraft</string>
+    <string name="general_reset_action">Reset</string>
+    <string name="rename_feeder_title">Rename feeder</string>
+    <string name="rename_feeder_description">Give your feeder more recognizeable a local name. Only affects the app.</string>
+    <string name="general_set_action">Set</string>
+</resources>
