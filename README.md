@@ -1,7 +1,7 @@
 # ADS-B Companion
 
-![Build](https://github.com/d4rken/adsbc-companion/actions/workflows/android.yml/badge.svg)
-[![Github All Releases](https://img.shields.io/github/downloads/d4rken/companion/total.svg)](https://github.com/d4rken/companion/releases/latest)
+![Build](https://github.com/d4rken/adsb-companion/actions/workflows/android.yml/badge.svg)
+[![Github All Releases](https://img.shields.io/github/downloads/d4rken/adsb-companion/total.svg)](https://github.com/d4rken/adsb-companion/releases/latest)
 
 An Android app that acts as companion to feeders. It's not about showing information about planes, but about feeders!
 
@@ -19,3 +19,7 @@ More features to come :).
 * Setup your feeder
 * Install the [ADS-B exchange stats package](https://github.com/adsbxchange/adsbexchange-stats)
 * Enter the [short ID you got from the stats package](https://github.com/adsbxchange/adsbexchange-stats) into the app
+
+## Screenshots
+
+<img src="https://github.com/d4rken/adsb-companion/raw/main/.assets/Screenshot_20220206_214726.png" width="200"><img src="https://github.com/d4rken/adsb-companion/raw/main/.assets/Screenshot_20220206_214742.png" width="200">
