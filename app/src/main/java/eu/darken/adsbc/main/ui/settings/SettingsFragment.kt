@@ -3,6 +3,7 @@ package eu.darken.adsbc.main.ui.settings
 import android.os.Bundle
 import android.os.Parcelable
 import android.view.View
+import androidx.annotation.Keep
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.viewModels
 import androidx.preference.Preference
@@ -26,6 +27,7 @@ class SettingsFragment : Fragment2(R.layout.settings_fragment),
 
     private val screens = ArrayList<Screen>()
 
+    @Keep
     @Parcelize
     data class Screen(
         val fragmentClass: String,

@@ -5,8 +5,8 @@ import androidx.annotation.Keep
 import com.squareup.moshi.JsonClass
 import kotlinx.parcelize.Parcelize
 
-@Parcelize
 @Keep
+@Parcelize
 @JsonClass(generateAdapter = true)
 data class ADSBxId(val value: String) : Parcelable {
 
