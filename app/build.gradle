@@ -46,8 +46,9 @@ android {
     if (signingPropFile.canRead()) {
         signingProps.load(new FileInputStream(signingPropFile))
     }
-    File keyStore = new File(System.getenv("STORE_PATH") ?: signingProps["release.storePath"])
-    if (keyStore.canRead()) {
+    String keyStorePath = System.getenv("STORE_PATH") ?: signingProps["release.storePath"]
+    File keyStore = keyStorePath ? new File(keyStorePath) : null
+    if (keyStore?.canRead()) {
         signingConfigs {
             release {
                 storeFile keyStore
