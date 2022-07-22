@@ -40,16 +40,20 @@ android {
     signingConfigs {
         release {}
     }
+
+    Properties signingProps = new Properties()
     def signingPropFile = new File(System.properties['user.home'], ".appconfig/${packageName}/signing.properties")
     if (signingPropFile.canRead()) {
-        Properties signingProps = new Properties()
         signingProps.load(new FileInputStream(signingPropFile))
+    }
+    File keyStore = new File(System.getenv("STORE_PATH") ?: signingProps["release.storePath"])
+    if (keyStore.canRead()) {
         signingConfigs {
             release {
-                storeFile new File(signingProps['release.storePath'])
-                keyAlias signingProps['release.keyAlias']
-                storePassword signingProps['release.storePassword']
-                keyPassword signingProps['release.keyPassword']
+                storeFile keyStore
+                storePassword  System.getenv("STORE_PASSWORD") ?: signingProps['release.storePassword']
+                keyAlias System.getenv("KEY_ALIAS") ?: signingProps['release.keyAlias']
+                keyPassword  System.getenv("KEY_PASSWORD") ?: signingProps['release.keyPassword']
             }
         }
     }
@@ -155,7 +159,7 @@ dependencies {
     implementation("org.jsoup:jsoup:1.14.3")
 
     // Debugging
-    implementation ('com.bugsnag:bugsnag-android:5.9.2')
+    implementation('com.bugsnag:bugsnag-android:5.9.2')
     implementation 'com.getkeepsafe.relinker:relinker:1.4.3'
 
     implementation("com.squareup.moshi:moshi:1.13.0")
