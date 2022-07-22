@@ -1,5 +1,6 @@
 # ADS-B Companion
 
+![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/d4rken/adsb-companion?include_prereleases)
 [![Code tests & eval](https://github.com/d4rken/adsb-companion/actions/workflows/code-checks.yml/badge.svg)](https://github.com/d4rken/adsb-companion/actions/workflows/code-checks.yml)
 [![Github All Releases](https://img.shields.io/github/downloads/d4rken/adsb-companion/total.svg)](https://github.com/d4rken/adsb-companion/releases/latest)
 
