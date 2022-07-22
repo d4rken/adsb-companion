@@ -1,6 +1,6 @@
 # ADS-B Companion
 
-![Build](https://github.com/d4rken/adsb-companion/actions/workflows/android.yml/badge.svg)
+[![Code tests & eval](https://github.com/d4rken/adsb-companion/actions/workflows/code-checks.yml/badge.svg)](https://github.com/d4rken/adsb-companion/actions/workflows/code-checks.yml)
 [![Github All Releases](https://img.shields.io/github/downloads/d4rken/adsb-companion/total.svg)](https://github.com/d4rken/adsb-companion/releases/latest)
 
 An Android app that acts as companion to feeders. It's not about showing information about planes, but about feeders!
