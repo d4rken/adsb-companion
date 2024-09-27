@@ -1,3 +1,8 @@
+Superseeded by https://github.com/d4rken/airplanes-live-app
+See https://airplanes.live/
+
+---
+
 # ADS-B Companion
 
 [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/d4rken/adsb-companion?include_prereleases)](https://github.com/d4rken/adsb-companion/releases/latest)
